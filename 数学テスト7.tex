@@ -1,0 +1,40 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+\usepackage[haranoaji]{luatexja-preset}
+\usepackage{amsmath,amssymb}
+\usepackage[top=12mm,bottom=10mm,left=14mm,right=14mm]{geometry}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\newlength{\qcol}\setlength{\qcol}{0.47\textwidth}
+\newlength{\qgap}
+\newlength{\anscolw}\setlength{\anscolw}{0.30\textwidth}
+\newlength{\ansh}
+\newcommand{\Q}[2]{\parbox[t]{\qcol}{\raggedright (#1)\hspace{0.6em}$\displaystyle #2$}}
+\newcommand{\QR}[4]{\Q{#1}{#2}\hfill\Q{#3}{#4}\par\vspace{\qgap}}
+\newcommand{\anscell}[1]{\rule[-\ansdrop]{0pt}{\ansh}(#1)}
+\newlength{\ansdrop}
+
+\begin{document}
+{\large\bfseries 数学テスト　7}\hfill 名前(\underline{\hspace{32mm}})\par\vspace{3mm}
+■（1）〜（12）の計算をしなさい。（13）、（14）は連立方程式を解きなさい。\par\vspace{3mm}
+\setlength{\qgap}{11mm}
+\QR{1}{5xy\times(-3yz)}{2}{(7x+2y)-(6x-3y)-(5x-4y)}
+\QR{3}{24ab\div4a}{4}{15a^2b\div3ab\times6b^3}
+\QR{5}{(x+4y)-(-3x+2y)}{6}{(3a^2+2a-1)+(-2a^2+3a+5)}
+\QR{7}{3(x+y)+4(x-3y)}{8}{(-4a)^2}
+\QR{9}{(21x-12y)\div3}{10}{\dfrac{3}{5}(15x-10y)}
+\QR{11}{\dfrac{a-2b}{3}-\dfrac{a+b}{4}}{12}{10b-\{3a+(9a-5b)+1\}}
+\QR{13}{\left\{\begin{array}{l} x=2y \\ x+3y=10 \end{array}\right.}{14}{\left\{\begin{array}{l} -x+2y=8 \\ -4x+3y=17 \end{array}\right.}
+\vfill
+\setlength{\ansh}{12mm}\setlength{\ansdrop}{8mm}%
+\begin{center}\begin{tabular}{|p{\anscolw}|p{\anscolw}|p{\anscolw}|}\hline
+\anscell{1} & \anscell{2} & \anscell{3} \\\hline
+\anscell{4} & \anscell{5} & \anscell{6} \\\hline
+\anscell{7} & \anscell{8} & \anscell{9} \\\hline
+\anscell{10} & \anscell{11} & \anscell{12} \\\hline
+\anscell{13} & \anscell{14} &  \\\hline
+\end{tabular}\end{center}
+
+\end{document}
