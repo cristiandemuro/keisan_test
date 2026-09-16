@@ -1,0 +1,46 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+\usepackage[haranoaji]{luatexja-preset}
+\usepackage{amsmath,amssymb}
+\usepackage[top=12mm,bottom=10mm,left=14mm,right=14mm]{geometry}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\newlength{\qcol}\setlength{\qcol}{0.47\textwidth}
+\newlength{\qgap}
+\newlength{\anscolw}\setlength{\anscolw}{0.30\textwidth}
+\newlength{\ansh}
+\newcommand{\Q}[2]{\parbox[t]{\qcol}{\raggedright (#1)\hspace{0.6em}$\displaystyle #2$}}
+\newcommand{\QR}[4]{\Q{#1}{#2}\hfill\Q{#3}{#4}\par\vspace{\qgap}}
+\newcommand{\anscell}[1]{\rule[-\ansdrop]{0pt}{\ansh}(#1)}
+\newlength{\ansdrop}
+
+\begin{document}
+{\large\bfseries 計算問題　15}\hfill 名前(\underline{\hspace{32mm}})\par\vspace{3mm}
+■（1）〜（16）の計算をしなさい。（17）〜（20）は方程式を解きなさい。\par\vspace{3mm}
+\setlength{\qgap}{5.4mm}
+\QR{1}{28x\div(-4)}{2}{(-6)\times9a}
+\QR{3}{(-11)-(-7)}{4}{\dfrac{1}{3}(12x-9)+\dfrac{1}{2}(4x+6)}
+\QR{5}{(-65)\div(-5)}{6}{-18\times(-7)}
+\QR{7}{(-10)+(-14)}{8}{\dfrac{3}{4}(8x-4)-\dfrac{2}{3}(6x+9)}
+\QR{9}{-5+2^3+(-4)}{10}{-0.3-(-3.6)-2.8}
+\QR{11}{\dfrac{1}{2}\div4+3\times\left(-\dfrac{1}{4}\right)}{12}{4\times\{3-(-5+1)\times2\}}
+\QR{13}{(4x+5)+(3x-7)}{14}{(-7)+(+9)-(-11)}
+\QR{15}{1-(-3)\div\left(-\dfrac{3}{4}\right)}{16}{\dfrac{x-4}{2}\times10}
+\QR{17}{3x-7=6x-4}{18}{-2x+2=8}
+\QR{19}{\dfrac{2}{3}x+1=\dfrac{3}{2}x-4}{20}{0.3x-0.5=7}
+\vspace{1mm}
+\Q{21}{\left\{\begin{array}{l} y=2x+1 \\ y=3x-1 \end{array}\right.}\par\vspace{3mm}
+\setlength{\ansh}{9.5mm}\setlength{\ansdrop}{6mm}%
+\begin{center}\begin{tabular}{|p{\anscolw}|p{\anscolw}|p{\anscolw}|}\hline
+\anscell{1} & \anscell{2} & \anscell{3} \\\hline
+\anscell{4} & \anscell{5} & \anscell{6} \\\hline
+\anscell{7} & \anscell{8} & \anscell{9} \\\hline
+\anscell{10} & \anscell{11} & \anscell{12} \\\hline
+\anscell{13} & \anscell{14} & \anscell{15} \\\hline
+\anscell{16} & \anscell{17} & \anscell{18} \\\hline
+\anscell{19} & \anscell{20} & \anscell{21} \\\hline
+\end{tabular}\end{center}
+
+\end{document}

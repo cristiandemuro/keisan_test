@@ -1,0 +1,46 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+\usepackage[haranoaji]{luatexja-preset}
+\usepackage{amsmath,amssymb}
+\usepackage[top=12mm,bottom=10mm,left=14mm,right=14mm]{geometry}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\newlength{\qcol}\setlength{\qcol}{0.47\textwidth}
+\newlength{\qgap}
+\newlength{\anscolw}\setlength{\anscolw}{0.30\textwidth}
+\newlength{\ansh}
+\newcommand{\Q}[2]{\parbox[t]{\qcol}{\raggedright (#1)\hspace{0.6em}$\displaystyle #2$}}
+\newcommand{\QR}[4]{\Q{#1}{#2}\hfill\Q{#3}{#4}\par\vspace{\qgap}}
+\newcommand{\anscell}[1]{\rule[-\ansdrop]{0pt}{\ansh}(#1)}
+\newlength{\ansdrop}
+
+\begin{document}
+{\large\bfseries 計算問題　10}\hfill 名前(\underline{\hspace{32mm}})\par\vspace{3mm}
+■（1）〜（16）の計算をしなさい。（17）〜（20）は方程式を解きなさい。\par\vspace{3mm}
+\setlength{\qgap}{5.4mm}
+\QR{1}{100x\div(-4)}{2}{(-6)\times5a}
+\QR{3}{(-13)-(-5)}{4}{\dfrac{1}{4}(12x-8)+\dfrac{1}{2}(8x+6)}
+\QR{5}{(-56)\div(-7)}{6}{(-3)\times(-17)}
+\QR{7}{(-9)+(-15)}{8}{\dfrac{1}{4}(8x-12)-\dfrac{1}{3}(6x+9)}
+\QR{9}{-7+5^2+(-6)}{10}{(96a-12)\div4}
+\QR{11}{(5x+4)+(7x-3)}{12}{(-8)+(+7)-(-15)}
+\QR{13}{3-(-6)\div\left(-\dfrac{3}{2}\right)}{14}{\dfrac{a-4}{3}\times6}
+\QR{15}{9\div4\times(-8)}{16}{(5x-4)-(6x-3)}
+\QR{17}{\dfrac{5}{6}x+3=\dfrac{7}{3}x}{18}{2x-7=3x+5}
+\QR{19}{3x+2=8}{20}{0.3x-0.2=4}
+\vspace{1mm}
+\Q{21}{54\times7+27\times4-108\times2}\par\vspace{3mm}
+\setlength{\ansh}{9.5mm}\setlength{\ansdrop}{6mm}%
+\begin{center}\begin{tabular}{|p{\anscolw}|p{\anscolw}|p{\anscolw}|}\hline
+\anscell{1} & \anscell{2} & \anscell{3} \\\hline
+\anscell{4} & \anscell{5} & \anscell{6} \\\hline
+\anscell{7} & \anscell{8} & \anscell{9} \\\hline
+\anscell{10} & \anscell{11} & \anscell{12} \\\hline
+\anscell{13} & \anscell{14} & \anscell{15} \\\hline
+\anscell{16} & \anscell{17} & \anscell{18} \\\hline
+\anscell{19} & \anscell{20} & \anscell{21} \\\hline
+\end{tabular}\end{center}
+
+\end{document}

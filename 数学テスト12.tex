@@ -1,0 +1,46 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+\usepackage[haranoaji]{luatexja-preset}
+\usepackage{amsmath,amssymb}
+\usepackage[top=12mm,bottom=10mm,left=14mm,right=14mm]{geometry}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\newlength{\qcol}\setlength{\qcol}{0.47\textwidth}
+\newlength{\qgap}
+\newlength{\anscolw}\setlength{\anscolw}{0.30\textwidth}
+\newlength{\ansh}
+\newcommand{\Q}[2]{\parbox[t]{\qcol}{\raggedright (#1)\hspace{0.6em}$\displaystyle #2$}}
+\newcommand{\QR}[4]{\Q{#1}{#2}\hfill\Q{#3}{#4}\par\vspace{\qgap}}
+\newcommand{\anscell}[1]{\rule[-\ansdrop]{0pt}{\ansh}(#1)}
+\newlength{\ansdrop}
+
+\begin{document}
+{\large\bfseries 計算問題　12}\hfill 名前(\underline{\hspace{32mm}})\par\vspace{3mm}
+■（1）〜（16）の計算をしなさい。（17）〜（20）は方程式を解きなさい。\par\vspace{3mm}
+\setlength{\qgap}{5.4mm}
+\QR{1}{(-8)+(-5)-(-15)}{2}{(-7)-(-12)}
+\QR{3}{(2a+1)+(3a-6)}{4}{(3x+7)-(5x-9)}
+\QR{5}{4a\times(-6)}{6}{-42x\div6}
+\QR{7}{(-11)\times(-9)}{8}{\dfrac{1}{3}(6a-9)-\dfrac{1}{4}(8a-24)}
+\QR{9}{\dfrac{x+5}{2}\times8}{10}{(42a-6)\div3}
+\QR{11}{\dfrac{3}{4}(4x+8)+\dfrac{2}{3}(3x+6)}{12}{-3^2+(-3)^3+(-3)}
+\QR{13}{\dfrac{3}{2}\div\dfrac{4}{5}\times(-16)}{14}{2-(-8)\div\left(-\dfrac{4}{3}\right)}
+\QR{15}{10-18\div(-9)-(-5)}{16}{5x+3-\{2x-(x+3)\}}
+\QR{17}{-2x+3=-9}{18}{2x-7=3x-5}
+\QR{19}{0.3x+0.6=0.1x}{20}{\dfrac{1}{4}x=\dfrac{2}{5}x+3}
+\vspace{1mm}
+\Q{21}{\left\{\begin{array}{l} x+y=3 \\ 2x-3y=1 \end{array}\right.}\par\vspace{3mm}
+\setlength{\ansh}{9.5mm}\setlength{\ansdrop}{6mm}%
+\begin{center}\begin{tabular}{|p{\anscolw}|p{\anscolw}|p{\anscolw}|}\hline
+\anscell{1} & \anscell{2} & \anscell{3} \\\hline
+\anscell{4} & \anscell{5} & \anscell{6} \\\hline
+\anscell{7} & \anscell{8} & \anscell{9} \\\hline
+\anscell{10} & \anscell{11} & \anscell{12} \\\hline
+\anscell{13} & \anscell{14} & \anscell{15} \\\hline
+\anscell{16} & \anscell{17} & \anscell{18} \\\hline
+\anscell{19} & \anscell{20} & \anscell{21} \\\hline
+\end{tabular}\end{center}
+
+\end{document}
